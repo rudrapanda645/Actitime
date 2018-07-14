@@ -6,22 +6,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
-import BfMethod.Actitime;
 
-import Excel.Excel;
+import Generics.Basetest;
 import pom.ActitimeLogin;
 
-public class ActitimeCreateProject extends Actitime{
+public class ActitimeCreateProject extends Basetest{
 
 	
 	@Test
 	public void c() throws InterruptedException
 	{
 
-		String un=Excel.getCellValue("E:/excel.xlsx", "Sheet1", 1, 0);
-		String pass=Excel.getCellValue("E:/excel.xlsx", "Sheet1", 2, 0);
+		
 		ActitimeLogin a= new ActitimeLogin(driver);
-		a.login(un,pass);
+		a.login();
 		
 		pom.ActitimeCreateProject z= new pom.ActitimeCreateProject(driver);
 		z.m();

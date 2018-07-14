@@ -5,7 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Facebook1 {
+import Generics.Autoconstant;
+import Generics.Excel;
+
+public class Facebook1 implements Autoconstant
+{
 
 	
 	@FindBy(id="email")
@@ -22,10 +26,10 @@ public class Facebook1 {
 PageFactory.initElements(driver, this);
 	}
 	
-	public void m(String em,String pwd)
+	public void m()
 	{
-		email.sendKeys(em);
-		pass.sendKeys(pwd);
+		email.sendKeys(Excel.getCellValue(path, "Sheet3", 2, 0));
+		pass.sendKeys(Excel.getCellValue(path, "Sheet3", 3, 0));
 		login.click();
 		
 		

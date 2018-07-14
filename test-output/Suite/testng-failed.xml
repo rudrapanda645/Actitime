@@ -1,18 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="classes">
-  <test thread-count="5" name="Test(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="test.ActitimeCreateCustomer">
+        <methods>
+          <include name="n"/>
+          <include name="c"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ActitimeCreateCustomer -->
+      <class name="test.ActitimeCreateProject">
+        <methods>
+          <include name="n"/>
+          <include name="c"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ActitimeCreateProject -->
       <class name="test.Gmail">
         <methods>
           <include name="G"/>
         </methods>
       </class> <!-- test.Gmail -->
+      <class name="test.ActitimeLogin">
+        <methods>
+          <include name="login"/>
+          <include name="n"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ActitimeLogin -->
+      <class name="test.GmailCheckbox">
+        <methods>
+          <include name="g"/>
+        </methods>
+      </class> <!-- test.GmailCheckbox -->
       <class name="test.Actitimepopup">
         <methods>
           <include name="create"/>
+          <include name="n"/>
+          <include name="m"/>
         </methods>
       </class> <!-- test.Actitimepopup -->
+      <class name="test.AssertEquals">
+        <methods>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.AssertEquals -->
+      <class name="test.Yatra1">
+        <methods>
+          <include name="m"/>
+          <include name="n"/>
+          <include name="g"/>
+        </methods>
+      </class> <!-- test.Yatra1 -->
+      <class name="test.Yatra">
+        <methods>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.Yatra -->
+      <class name="test.SoftAssert">
+        <methods>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.SoftAssert -->
+      <class name="test.ActitimeCreateTask">
+        <methods>
+          <include name="c"/>
+          <include name="n"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ActitimeCreateTask -->
+      <class name="test.ExcelFileRead">
+        <methods>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ExcelFileRead -->
+      <class name="test.ActitimeLoginOut">
+        <methods>
+          <include name="c"/>
+          <include name="n"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ActitimeLoginOut -->
+      <class name="test.ActitimeTypeOfWork">
+        <methods>
+          <include name="c"/>
+          <include name="n"/>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.ActitimeTypeOfWork -->
+      <class name="test.Facebook">
+        <methods>
+          <include name="b"/>
+        </methods>
+      </class> <!-- test.Facebook -->
+      <class name="test.FileDownload">
+        <methods>
+          <include name="m"/>
+        </methods>
+      </class> <!-- test.FileDownload -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

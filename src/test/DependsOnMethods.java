@@ -10,6 +10,7 @@ public class DependsOnMethods {
 	public void f()
 	{
 		Reporter.log("rudra",true);
+		Assert.fail();
 	}
 	
 	

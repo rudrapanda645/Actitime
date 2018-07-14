@@ -4,7 +4,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class Priority {
-@Test(priority=1)
+ @Test(priority=1)
 public void m()
 {
 	Reporter.log("Rudra",true);
@@ -12,7 +12,7 @@ public void m()
 	
 }
 
-@Test(priority=3)
+@Test
 public void a()
 {
 	Reporter.log("amar",true);

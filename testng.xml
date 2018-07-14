@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" >
   <test thread-count="5" name="Test">
     <classes>
-      <class name="test.ActitimeTypeOfWork"/>
-      <class name="test.ActitimeLoginOut"/>
-      <class name="test.FileDownload"/>
       <class name="test.Naukri"/>
-      <class name="test.ActitimeCreateProject"/>
       <class name="test.Yatra"/>
-      <class name="test.DependsOnMethods"/>
-      <class name="test.ExcelFileRead"/>
       <class name="test.Facebook"/>
-      <class name="test.ActitimeLogin"/>
       <class name="test.GmailCheckbox"/>
-      <class name="test.AssertEquals"/>
       <class name="test.Practice"/>
       <class name="test.Gmail"/>
       <class name="test.Flipkart"/>
       <class name="test.InvocationCount"/>
+      <class name="test.Actitimepopup"/>
+      <class name="test.Autosuggestion"/>
+      <class name="test.Facebook1"/>
+      <class name="test.Priority"/>
+      <class name="test.ActitimeLoginOut"/>
+      <class name="test.ActitimeTypeOfWork"/>
+      <class name="test.FileDownload"/>
+      <class name="test.ActitimeCreateProject"/>
+      <class name="test.DependsOnMethods"/>
+      <class name="test.ExcelFileRead"/>
+      <class name="test.ActitimeLogin"/>
+      <class name="test.AssertEquals"/>
+      <class name="test.Yatra1"/>
       <class name="test.ActitimeCreateCustomer"/>
       <class name="test.ActitimeCreateTask"/>
-      <class name="test.Autosuggestion"/>
-      <class name="test.Actitimepopup"/>
+      <class name="test.ChildWindow"/>
       <class name="test.SoftAssert"/>
-      <class name="test.Priority"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

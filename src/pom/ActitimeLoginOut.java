@@ -5,7 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ActitimeLoginOut {
+import Generics.Autoconstant;
+import Generics.Excel;
+
+public class ActitimeLoginOut implements Autoconstant
+{
 
 	
 	@FindBy(id="username")
@@ -26,12 +30,12 @@ public ActitimeLoginOut(WebDriver driver) {
 PageFactory.initElements(driver, this);
 	}
 
-public void m(String un,String pass) throws InterruptedException
+public void m() throws InterruptedException
 {
-	username.sendKeys(un);
+	username.sendKeys(Excel.getCellValue(path, "Sheet3", 4, 0));
 	Thread.sleep(2000);
 	
-	password.sendKeys(pass);
+	password.sendKeys(Excel.getCellValue(path, "Sheet3", 5, 0));
 	
 	login.click();
 	Thread.sleep(5000);
